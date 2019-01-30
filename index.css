@@ -1,0 +1,431 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+[class*="col-"] {float: left; padding: 10px; width: 100%;}
+
+@media only screen and (min-width: 320px){
+	/*Smartphone*/
+	.col-s-1{width: 8.33%;}
+	.col-s-2{width: 16.66%;}
+	.col-s-3{width: 25%;}
+	.col-s-4{width: 33.33%;}
+	.col-s-5{width: 41.66%;}
+	.col-s-6{width: 50%;}
+	.col-s-7{width: 58.33%;}
+	.col-s-8{width: 66.66%;}
+	.col-s-9{width: 75%;}
+	.col-s-10{width: 83.33%;}
+	.col-s-11{width: 91.66%;}
+	.col-s-12{width: 100%;}
+
+	.header{
+		background-position: center;
+		height: auto;
+	}
+
+	.header .logo{
+		padding-top: 50px;
+		padding-left: 0;
+	}
+
+	.menu a{
+		padding: 10px;
+
+	}
+
+	.header .judul h1{
+		text-align: center;
+	}
+
+	.header .judul h2{
+		text-align: center;
+	}
+
+	.sejarah{
+		height: auto;
+	}
+
+	.sejarah h1{
+		padding-top: 0;
+	}
+
+
+	.wisata img{
+		width: 300px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	/*Desktop*/
+	.col-1{width: 8.33%;}
+	.col-2{width: 16.66%;}
+	.col-3{width: 25%;}
+	.col-4{width: 33.33%;}
+	.col-5{width: 41.66%;}
+	.col-6{width: 50%;}
+	.col-7{width: 58.33%;}
+	.col-8{width: 66.66%;}
+	.col-9{width: 75%;}
+	.col-10{width: 83.33%;}
+	.col-11{width: 91.66%;}
+	.col-12{width: 100%;}
+
+	.header{
+		height: 430px;
+	}
+
+	.header .logo{
+		padding-top: 55px;
+		padding-left: 90px;
+	}
+
+	.header .judul h1{
+		text-align: left;
+		padding-top: 50px;
+	}
+
+	.header .judul h2{
+		text-align: left;
+	}
+
+	.menu a{
+		padding: 20px;
+	}
+
+	.sejarah{
+		height: 700px;
+	}
+
+	.sejarah h1{
+		padding-top: 100px;
+	}
+
+	.wisata img{
+		width: 550px;
+		height: auto;
+	}
+}
+
+.header{
+	background: url(img/candi.jpg) no-repeat center;
+	background-size: cover;
+	/*height: 400px;*/
+}
+
+.header .logo{
+	text-align: center;
+}
+
+.header .logo img{
+	width: 300px;
+	height: auto;
+}
+
+.header .judul h1{
+	/*padding-top: 50px;*/
+	margin-top: 50px;
+	font-family: Bahnschrift;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.header .judul h2{
+	font-family: Bahnschrift;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.menu{
+	background-image: linear-gradient(to top, #00000000 0, #2d2d2d 130%);
+	float: left;
+	position: fixed;
+	height: 70px;
+}
+
+.menu a{
+	float: right;
+	list-style-type: none;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: Bahnschrift;
+	display: block;
+}
+
+.menu a:hover{
+	color: red;
+	border-top: 2px solid red;
+	/*background: white;*/
+}
+
+.welcome{
+	background: #222;
+	height: auto;
+}
+
+.welcome h1{
+	font-family: Bahnschrift;
+	/*padding-top: 100px;*/
+	font-size: 40px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.sejarah{
+	background: url(img/alun.jpg) no-repeat center;
+	background-size: cover;
+	float: left;
+}
+
+.sejarah h1{
+	font-family: Bahnschrift;
+	/*padding-top: 100px;*/
+	font-size: 60px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.sejarah p{
+	font-family: Bahnschrift;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.budaya{
+	background: #111;
+	height: auto;
+	padding: 20px; 
+}
+
+.budaya h1{
+	font-family: Bahnschrift;
+	font-size: 40px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.budaya .left h1{
+	font-family: Bahnschrift;
+	font-size: 30px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.budaya .left img{
+	width: 300px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.budaya .left p{
+	font-family: Bahnschrift;
+	font-size: 20px;
+	text-align: justify;
+	color: #fff;
+	background: #222;
+	padding: 20px;
+}
+
+.budaya .right h1{
+	font-family: Bahnschrift;
+	font-size: 30px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.budaya .right img{
+	width: 300px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.budaya .right p{
+	font-family: Bahnschrift;
+	font-size: 20px;
+	text-align: justify;
+	color: #fff;
+	background: #222;
+	padding: 20px;
+}
+
+.wisata{
+	background: #222;
+	height: auto;
+	padding: 20px;
+}
+
+.wisata h1{
+	font-family: Bahnschrift;
+	font-size: 40px;
+	font-weight: 100;
+	padding: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.wisata h2{
+	font-family: Bahnschrift;
+	font-size: 30px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.wisata img{
+/*	width: 550px;
+	height: auto;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wisata h3{
+	font-family: Bahnschrift;
+	font-size: 30px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	background: #444;
+	padding: 20px;
+	width: auto;
+	display: block;
+}
+
+.makanan{
+	background: #333;
+	height: auto;
+	padding: 20px; 
+}
+
+.makanan h1{
+	font-family: Bahnschrift;
+	font-size: 40px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.makanan .left h1{
+	font-family: Bahnschrift;
+	font-size: 30px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.makanan .left img{
+	width: 300px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.makanan .left p{
+	font-family: Bahnschrift;
+	font-size: 20px;
+	text-align: justify;
+	color: #fff;
+	background: #222;
+	padding: 20px;
+}
+
+.makanan .right h1{
+	font-family: Bahnschrift;
+	font-size: 30px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.makanan .right img{
+	width: 300px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.makanan .right p{
+	font-family: Bahnschrift;
+	font-size: 20px;
+	text-align: justify;
+	color: #fff;
+	background: #222;
+	padding: 20px;
+}
+
+div.footer{
+	width: 100%;
+	height: 50px;
+	background: #111;
+	float: left;
+}
+
+div.footer .col1{
+	width: 50%;
+	height: auto;
+	color: #fff;
+	float: left;
+	box-sizing: border-box;
+}
+
+div.footer .col2{
+	width: 50%;
+	height: auto;
+	color: #fff;
+	float: right;
+	box-sizing: border-box;
+}
+
+div.footer .col1 h2{
+	color: gray;
+	margin-left: 100px;
+	text-align: left;
+	font-size: 15px;
+	margin-top: 15px;
+	font-weight: 100;
+	font-family: Century Gothic, sans-serif;
+}
+
+div.footer .col2 h2{
+	color: gray;
+	margin-right: 80px;
+	text-align: right;
+	font-size: 15px;
+	margin-top: 15px;
+	font-weight: 100;
+	font-family: Century Gothic, sans-serif;
+}
